@@ -1,7 +1,17 @@
-import './App.css';
+import { Route,Routes } from 'react-router-dom';
+import GlobalStyles from './components/GlobalStyles';
+import routes from './routes';
 
 function App() {
-    return <h1 className="text-orange-500">Hello world!</h1>;
+    return (
+        <GlobalStyles>
+            <Routes>
+                {routes.map((route, index) => {
+                    return <Route key={index} path={route.path} element={<route.component/>}/>
+                })}
+            </Routes>
+        </GlobalStyles>
+    );
 }
 
 export default App;
