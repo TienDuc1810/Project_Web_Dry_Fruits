@@ -30,7 +30,7 @@ const LoginForm = () => {
                                     className={cx('login-icon')}
                                 />
                             </span>
-                            <input type="text" placeholder="Username" className={cx('login-input')} />
+                            <input type="text" placeholder="Email" className={cx('login-input')} />
                         </div>
                     </div>
                     <div className={cx('login-wrapper-input')}>
